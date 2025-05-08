@@ -1,0 +1,166 @@
+* {
+  /* style proprties */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#body {
+  display: flex;
+}
+
+#menu-bar {
+  /* display proprties */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* position proprties */
+  position: fixed;
+  z-index: 1;
+  /* size proprties */
+  height: 5.25vh;
+  width: 100%;
+  /* style proprties */
+  background-color: #141719;
+}
+
+.link {
+  /* font proprties */
+  font-family: "poppins";
+  font-size: 12px;
+  color: #f9fafd;
+  text-decoration: none;
+}
+
+.panels {
+  /* size */
+  height: 100vh;
+  width: 50vw;
+}
+
+#left-panel {
+  background-color: #f9fafd;
+  color: #151515;
+}
+
+#right-panel {
+  background-color: #283618;
+  color: #f9fafd;
+}
+
+.text-box {
+  /* display proprties */
+  display: inline-block;
+  /* position proprties */
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home-message {
+  /* font proprties */
+  font-family: "agrandir";
+  font-size: 36px;
+}
+
+#linkedin-button {
+  /* position proprties */
+  position: absolute;
+  bottom: 5%;
+  right: 55%;
+  /* style proprties */
+  padding: 7px 25px;
+  border-radius: 15px;
+  border-width: 1.5px;
+  background-color: #f9fafd;
+  /* font proprties */
+  font-family: "poppins";
+}
+
+#about-me {
+  /* font proprties */
+  font-family: "agrandir";
+  font-size: 32px;
+}
+
+.loader {
+  font-family: "agrandir";
+  font-size: 22px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#details {
+  overflow: hidden;
+  position: relative;
+}
+
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    var(--bg-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--bg-color) 90%
+  );
+  z-index: 20;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  color: #ffbe1a;
+  animation: spin 5s infinite;
+}
+
+@keyframes spin {
+  10% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  35% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+  85% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+}

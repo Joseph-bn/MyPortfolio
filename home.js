@@ -1,0 +1,1 @@
+const cursor = new MouseFollower();
